@@ -12,7 +12,10 @@ public class Secure extends Controller {
         render();
     }
 
-    public static void logout(){
+//    En el 'logout' habría que realizar alguna acción para que cuando el usuario
+//    cierre la sesión no se pueda volver sobre ella pinchando en volver atrás
+//    en el navegador
+        public static void logout(){
         session.remove("password");
         login();
     }
